@@ -40,3 +40,6 @@ header {
   margin: 0 auto 20px;
   border-radius: 20px;
 }
+a:hover {
+  color: #0077cc;
+}
