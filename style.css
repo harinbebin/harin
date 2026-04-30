@@ -43,3 +43,12 @@ header {
 a:hover {
   color: #0077cc;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a .card h3,
+a .card p {
+  color: black;
+}
