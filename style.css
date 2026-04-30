@@ -52,3 +52,19 @@ a .card h3,
 a .card p {
   color: black;
 }
+
+a,
+a:visited,
+a:active {
+  color: black !important;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0077cc;
+}
+
+a .card h3,
+a .card p {
+  color: black !important;
+}
