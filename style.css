@@ -68,3 +68,47 @@ a .card h3,
 a .card p {
   color: black !important;
 }
+.page-layout {
+  display: flex;
+  max-width: 1000px;
+  margin: 40px auto;
+  gap: 40px;
+  text-align: left;
+}
+
+.side-menu {
+  width: 180px;
+  position: sticky;
+  top: 30px;
+  height: fit-content;
+  background: #f4fbff;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.side-menu a {
+  display: block;
+  margin-bottom: 15px;
+  color: black !important;
+  font-weight: bold;
+}
+
+.side-menu a:hover {
+  color: #0077cc !important;
+}
+
+.content {
+  flex: 1;
+}
+
+.content section {
+  margin-bottom: 60px;
+}
+
+.content h2 {
+  color: #0077cc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
