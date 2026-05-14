@@ -5,43 +5,55 @@
   <title>백신과 면역</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="sub-page">
 
   <a href="index.html">← 메인으로 돌아가기</a>
 
-  <h1>백신과 면역 반응</h1>
+  <div class="page-layout">
 
-  <h2>1. 개념</h2>
-  <p>
-  백신은 병원체의 일부 또는 약화된 형태를 이용하여
-  면역 반응을 유도하는 방법이다.
-  </p>
+    <nav class="side-menu">
+      <button onclick="showSection('concept')">개념</button>
+      <button onclick="showSection('mechanism')">Mechanism</button>
+      <button onclick="showSection('application')">수의학적 적용</button>
+      <button onclick="showSection('analysis')">나의 분석</button>
+    </nav>
 
-  <h2>2. 🔬 Mechanism</h2>
-  <p>
-  백신이 체내에 들어오면 면역계는 이를 항원으로 인식한다.
-  이 과정에서 B세포와 T세포가 활성화되며,
-  항체와 기억세포가 형성된다.
+    <div class="content">
+      <h1>백신과 면역 반응</h1>
 
-  이후 동일한 병원체가 다시 들어오면
-  면역계가 더 빠르고 강하게 반응할 수 있다.
-  </p>
+      <div id="concept" class="info-section">
+        <h2>1. 개념</h2>
+        <p>백신은 병원체의 일부 또는 약화된 형태를 이용하여 면역 반응을 유도하는 방법이다.</p>
+      </div>
 
-  <h2>3. 💊 수의학적 적용</h2>
-  <p>
-  반려견에서는 감염병 예방을 위해 다양한 백신이 사용된다.
-  백신은 개체의 건강뿐 아니라
-  집단 내 질병 확산을 막는 데에도 중요한 역할을 한다.
-  </p>
+      <div id="mechanism" class="info-section">
+        <h2>2. Mechanism</h2>
+        <p>백신이 체내에 들어오면 면역계는 이를 항원으로 인식한다. 이 과정에서 B세포와 T세포가 활성화되고, 항체와 기억세포가 형성된다.</p>
+      </div>
 
-  <h2>4. 🧠 나의 분석</h2>
-  <p>
-  백신은 실제 감염 없이 면역계를 훈련시킨다는 점에서
-  매우 효율적인 예방 방법이라고 생각한다.
+      <div id="application" class="info-section">
+        <h2>3. 수의학적 적용</h2>
+        <p>반려견에서는 감염병 예방을 위해 다양한 백신이 사용된다. 백신은 개체의 건강뿐 아니라 집단 내 질병 확산을 막는 데에도 중요하다.</p>
+      </div>
 
-  이는 치료 중심이 아닌 예방 중심의 수의학적 접근이라는 점에서
-  중요한 의미를 가진다.
-  </p>
+      <div id="analysis" class="info-section">
+        <h2>4. 나의 분석</h2>
+        <p>백신은 실제 감염 없이 면역계를 훈련시킨다는 점에서 예방 중심의 수의학적 접근이라고 볼 수 있다.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      document.querySelectorAll('.info-section').forEach(section => {
+        section.style.display = 'none';
+      });
+      document.getElementById(sectionId).style.display = 'block';
+    }
+    showSection('concept');
+  </script>
 
 </body>
 </html>
