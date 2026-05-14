@@ -33,24 +33,13 @@ header {
   width: 200px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
 .hero-img {
   width: 60%;
   max-width: 400px;
   display: block;
   margin: 0 auto 20px;
   border-radius: 20px;
-}
-a:hover {
-  color: #0077cc;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a .card h3,
-a .card p {
-  color: black;
 }
 
 a,
@@ -61,102 +50,23 @@ a:active {
 }
 
 a:hover {
-  color: #0077cc;
+  color: #0077cc !important;
 }
 
 a .card h3,
 a .card p {
   color: black !important;
 }
-.page-layout {
-  display: flex;
-  max-width: 1000px;
+
+section {
+  max-width: 800px;
   margin: 40px auto;
-  gap: 40px;
+  padding: 0 20px;
   text-align: left;
+  line-height: 1.7;
 }
 
-.side-menu {
-  width: 180px;
-  position: sticky;
-  top: 30px;
-  height: fit-content;
-  background: #f4fbff;
-  padding: 20px;
-  border-radius: 15px;
-}
-
-.side-menu a {
-  display: block;
-  margin-bottom: 15px;
-  color: black !important;
-  font-weight: bold;
-}
-
-.side-menu a:hover {
-  color: #0077cc !important;
-}
-
-.content {
-  flex: 1;
-}
-
-.content section {
-  margin-bottom: 60px;
-}
-
-.content h2 {
+section h2 {
   color: #0077cc;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-.page-layout {
-  display: flex !important;
-  max-width: 1000px;
-  margin: 40px auto;
-  gap: 40px;
-  text-align: left;
-  align-items: flex-start;
-}
-
-.side-menu {
-  width: 180px;
-  min-width: 180px;
-  position: sticky;
-  top: 30px;
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
-
-.side-menu a {
-  display: block !important;
-  margin-bottom: 15px;
-  color: black !important;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.side-menu a:hover {
-  color: #0077cc !important;
-}
-
-.content {
-  flex: 1;
-  text-align: left;
-}
-
-.content section {
-  margin-bottom: 60px;
-}
-
-.content h1 {
-  text-align: left;
-}
-
-.content h2 {
-  color: #0077cc;
 }
