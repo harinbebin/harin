@@ -1,97 +1,60 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #f4fbff;
-}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>항생제 작용</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-header {
-  background-color: #a8d8ff;
-  padding: 30px;
-  color: white;
-}
+<body class="sub-page">
 
-.hero {
-  padding: 80px 20px;
-}
+  <a href="index.html">← 메인으로 돌아가기</a>
 
-.hero h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
+  <div class="page-layout">
 
-.products {
-  padding: 50px 20px;
-}
+    <nav class="side-menu">
+      <a href="#concept">개념</a>
+      <a href="#mechanism">Mechanism</a>
+      <a href="#application">수의학적 적용</a>
+      <a href="#analysis">나의 분석</a>
+    </nav>
 
-.card {
-  display: inline-block;
-  background: white;
-  padding: 20px;
-  margin: 15px;
-  border-radius: 15px;
-  width: 200px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
+    <div class="content">
+      <h1>항생제의 작용 원리</h1>
 
-.hero-img {
-  width: 60%;
-  max-width: 400px;
-  display: block;
-  margin: 0 auto 20px;
-  border-radius: 20px;
-}
+      <h2 id="concept">1. 개념</h2>
+      <p>
+        항생제는 세균 감염을 치료하기 위해 사용되는 약물로,
+        세균을 직접 죽이거나 증식을 억제하는 역할을 한다.
+        항생제는 바이러스에는 효과가 없으며,
+        세균과 동물 세포의 구조적 차이를 이용해 작용한다.
+      </p>
 
-a,
-a:visited,
-a:active {
-  color: black !important;
-  text-decoration: none;
-}
+      <h2 id="mechanism">2. Mechanism</h2>
+      <p>
+        항생제는 다양한 방식으로 세균의 생존을 방해한다.
+        대표적으로 세포벽 합성을 억제하거나 단백질 합성을 방해한다.
+        세균은 세포벽을 통해 형태를 유지하는데,
+        이 구조가 손상되면 생존하기 어려워진다.
+      </p>
 
-a:hover {
-  color: #0077cc !important;
-}
+      <h2 id="application">3. 수의학적 적용</h2>
+      <p>
+        수의학에서는 피부 감염, 호흡기 감염, 상처 감염 등
+        다양한 세균성 질환 치료에 항생제가 사용된다.
+        정확한 용량과 투여 기간을 지키는 것이 중요하다.
+      </p>
 
-a .card h3,
-a .card p {
-  color: black !important;
-}
+      <h2 id="analysis">4. 나의 분석</h2>
+      <p>
+        항생제가 세균에 선택적으로 작용할 수 있는 이유는
+        세균과 동물 세포 사이의 구조적 차이 때문이다.
+        특히 세균의 세포벽은 동물 세포에는 존재하지 않기 때문에,
+        이를 표적으로 하는 약물은 효과적인 치료 수단이 된다.
+      </p>
+    </div>
 
-.page-layout {
-  display: flex;
-  max-width: 1000px;
-  margin: 40px auto;
-  gap: 20px;
-  align-items: flex-start;
-}
+  </div>
 
-.side-menu {
-  width: 150px;
-  min-width: 150px;
-  position: sticky;
-  top: 30px;
-}
-
-.side-menu a {
-  display: block;
-  margin-bottom: 10px;
-  color: black !important;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.content {
-  flex: 1;
-  text-align: center;
-}
-
-.content h2 {
-  color: black;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-  scroll-behavior: smooth;
-}
+</body>
+</html>
