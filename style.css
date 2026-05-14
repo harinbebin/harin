@@ -102,3 +102,20 @@ html {
 .side-menu button:hover {
   color: #0077cc;
 }
+.sub-page .side-menu button {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: black;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  text-align: center;
+}
+
+.sub-page .side-menu button:hover {
+  color: #0077cc;
+}
