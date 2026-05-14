@@ -58,59 +58,40 @@ a .card p {
   color: black !important;
 }
 
-section {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
-  text-align: left;
-  line-height: 1.7;
-}
-
-section h2 {
-  color: #0077cc;
-}
-}
 .page-layout {
   display: flex;
   max-width: 1000px;
   margin: 40px auto;
-  gap: 40px;
+  gap: 20px;
   align-items: flex-start;
 }
 
 .side-menu {
-  width: 180px;
-  min-width: 180px;
+  width: 150px;
+  min-width: 150px;
   position: sticky;
   top: 30px;
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
 .side-menu a {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: black !important;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 14px;
 }
 
 .content {
   flex: 1;
-  text-align: left;
-}
-
-.content section {
-  margin-bottom: 120px;
-  padding-top: 20px;
+  text-align: center;
 }
 
 .content h2 {
-  color: #0077cc;
+  color: black;
 }
 
 html {
+  scroll-behavior: smooth;
+}
   scroll-behavior: smooth;
 }
