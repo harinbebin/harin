@@ -5,45 +5,55 @@
   <title>심장사상충</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="sub-page">
 
   <a href="index.html">← 메인으로 돌아가기</a>
 
-  <h1>심장사상충과 감염 메커니즘</h1>
+  <div class="page-layout">
 
-  <h2>1. 개념</h2>
-  <p>
-  심장사상충은 모기를 통해 전파되는 기생충으로,
-  감염되면 심장과 폐혈관에 서식하여 다양한 질병을 유발한다.
-  </p>
+    <nav class="side-menu">
+      <button onclick="showSection('concept')">개념</button>
+      <button onclick="showSection('mechanism')">Mechanism</button>
+      <button onclick="showSection('application')">수의학적 적용</button>
+      <button onclick="showSection('analysis')">나의 분석</button>
+    </nav>
 
-  <h2>2. 🔬 Mechanism</h2>
-  <p>
-  감염된 모기가 반려견을 물면 유충이 체내로 들어온다.
-  이 유충은 혈관을 따라 이동하며 성장하여
-  최종적으로 심장과 폐동맥에 자리 잡는다.
+    <div class="content">
+      <h1>심장사상충과 감염 메커니즘</h1>
 
-  성충이 되면 혈류를 방해하고
-  염증 반응을 유발하여 호흡 곤란과 심장 기능 저하를 일으킨다.
-  </p>
+      <div id="concept" class="info-section">
+        <h2>1. 개념</h2>
+        <p>심장사상충은 모기를 통해 전파되는 기생충으로, 감염되면 심장과 폐혈관에 영향을 줄 수 있다.</p>
+      </div>
 
-  <h2>3. 💊 수의학적 적용</h2>
-  <p>
-  심장사상충은 예방약을 통해 감염을 막을 수 있으며,
-  감염된 경우에는 약물을 사용하여 기생충을 제거한다.
+      <div id="mechanism" class="info-section">
+        <h2>2. Mechanism</h2>
+        <p>감염된 모기가 반려견을 물면 유충이 체내로 들어온다. 유충은 성장하면서 혈관을 따라 이동하고, 심장과 폐동맥에 자리 잡을 수 있다.</p>
+      </div>
 
-  하지만 치료 과정에서 죽은 기생충이 혈관을 막을 수 있어
-  주의가 필요하다.
-  </p>
+      <div id="application" class="info-section">
+        <h2>3. 수의학적 적용</h2>
+        <p>심장사상충은 예방약을 통해 감염을 막는 것이 중요하다. 감염 후 치료는 동물에게 부담이 될 수 있어 정기적인 예방이 필요하다.</p>
+      </div>
 
-  <h2>4. 🧠 나의 분석</h2>
-  <p>
-  심장사상충은 치료보다 예방이 훨씬 중요한 질병이라고 생각한다.
+      <div id="analysis" class="info-section">
+        <h2>4. 나의 분석</h2>
+        <p>심장사상충은 치료보다 예방이 중요한 대표적인 질환이다. 기생충이 성장한 뒤에는 치료 과정 자체가 위험할 수 있기 때문이다.</p>
+      </div>
+    </div>
 
-  기생충이 성장한 이후에는 치료 과정 자체가
-  동물에게 부담이 될 수 있기 때문에,
-  정기적인 예방이 가장 효과적인 방법이라고 볼 수 있다.
-  </p>
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      document.querySelectorAll('.info-section').forEach(section => {
+        section.style.display = 'none';
+      });
+      document.getElementById(sectionId).style.display = 'block';
+    }
+    showSection('concept');
+  </script>
 
 </body>
 </html>
