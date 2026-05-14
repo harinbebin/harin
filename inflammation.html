@@ -5,46 +5,55 @@
   <title>염증과 소염제</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="sub-page">
 
   <a href="index.html">← 메인으로 돌아가기</a>
 
-  <h1>염증 반응과 소염제 작용</h1>
+  <div class="page-layout">
 
-  <h2>1. 개념</h2>
-  <p>
-  염증은 조직 손상이나 감염에 대응하기 위한
-  생체의 방어 반응이다.
-  붓기, 통증, 발열, 발적 등이 대표적인 증상이다.
-  </p>
+    <nav class="side-menu">
+      <button onclick="showSection('concept')">개념</button>
+      <button onclick="showSection('mechanism')">Mechanism</button>
+      <button onclick="showSection('application')">수의학적 적용</button>
+      <button onclick="showSection('analysis')">나의 분석</button>
+    </nav>
 
-  <h2>2. 🔬 Mechanism</h2>
-  <p>
-  조직이 손상되면 면역세포가 활성화되고,
-  히스타민과 사이토카인 같은 염증 매개 물질이 분비된다.
+    <div class="content">
+      <h1>염증 반응과 소염제 작용</h1>
 
-  이 물질들은 혈관을 확장시키고,
-  면역세포가 손상 부위로 이동하도록 하여
-  염증 반응을 일으킨다.
-  </p>
+      <div id="concept" class="info-section">
+        <h2>1. 개념</h2>
+        <p>염증은 조직 손상이나 감염에 대응하기 위한 생체의 방어 반응이다.</p>
+      </div>
 
-  <h2>3. 💊 수의학적 적용</h2>
-  <p>
-  소염제는 이러한 염증 반응을 조절하여
-  통증과 부종을 줄이는 데 사용된다.
+      <div id="mechanism" class="info-section">
+        <h2>2. Mechanism</h2>
+        <p>조직이 손상되면 면역세포가 활성화되고 염증 매개 물질이 분비된다. 이 물질들은 혈관 확장, 통증, 부종 등을 유발한다.</p>
+      </div>
 
-  특히 관절 질환이나 수술 후 통증 관리에서
-  중요한 역할을 한다.
-  </p>
+      <div id="application" class="info-section">
+        <h2>3. 수의학적 적용</h2>
+        <p>소염제는 관절 질환, 수술 후 통증, 염증성 질환에서 통증과 부종을 줄이기 위해 사용된다.</p>
+      </div>
 
-  <h2>4. 🧠 나의 분석</h2>
-  <p>
-  염증은 몸을 보호하기 위한 반응이지만,
-  과도하게 나타나면 오히려 조직 손상을 유발할 수 있다.
+      <div id="analysis" class="info-section">
+        <h2>4. 나의 분석</h2>
+        <p>염증은 몸을 보호하기 위한 반응이지만 과도하면 조직 손상을 일으킬 수 있다. 따라서 소염제는 과도한 반응을 조절하는 역할을 한다.</p>
+      </div>
+    </div>
 
-  따라서 소염제는 염증을 완전히 제거하기보다는
-  과도한 반응을 조절하는 데 의미가 있다고 생각한다.
-  </p>
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      document.querySelectorAll('.info-section').forEach(section => {
+        section.style.display = 'none';
+      });
+      document.getElementById(sectionId).style.display = 'block';
+    }
+    showSection('concept');
+  </script>
 
 </body>
 </html>
