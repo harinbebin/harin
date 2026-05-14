@@ -70,3 +70,47 @@ section h2 {
   color: #0077cc;
 }
 }
+.page-layout {
+  display: flex;
+  max-width: 1000px;
+  margin: 40px auto;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.side-menu {
+  width: 180px;
+  min-width: 180px;
+  position: sticky;
+  top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.side-menu a {
+  display: block;
+  margin-bottom: 15px;
+  color: black !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content {
+  flex: 1;
+  text-align: left;
+}
+
+.content section {
+  margin-bottom: 120px;
+  padding-top: 20px;
+}
+
+.content h2 {
+  color: #0077cc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
