@@ -86,3 +86,19 @@ a .card p {
 html {
   scroll-behavior: smooth;
 }
+.info-section {
+  display: none;
+}
+
+.side-menu button {
+  display: block;
+  margin-bottom: 10px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.side-menu button:hover {
+  color: #0077cc;
+}
