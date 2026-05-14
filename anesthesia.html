@@ -5,39 +5,55 @@
   <title>마취</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="sub-page">
 
   <a href="index.html">← 메인으로 돌아가기</a>
 
-  <h1>마취와 신경 억제 작용</h1>
+  <div class="page-layout">
 
-  <h2>1. 개념</h2>
-  <p>
-  마취는 수술이나 처치 과정에서 통증을 줄이고,
-  의식과 움직임을 조절하기 위해 사용하는 의학적 방법이다.
-  </p>
+    <nav class="side-menu">
+      <button onclick="showSection('concept')">개념</button>
+      <button onclick="showSection('mechanism')">Mechanism</button>
+      <button onclick="showSection('application')">수의학적 적용</button>
+      <button onclick="showSection('analysis')">나의 분석</button>
+    </nav>
 
-  <h2>2. 🔬 Mechanism</h2>
-  <p>
-  마취제는 신경세포 사이의 신호 전달을 억제하여
-  통증 자극이 뇌로 전달되는 것을 줄인다.
-  일부 마취제는 중추신경계를 억제하여 의식 소실을 유도하기도 한다.
-  </p>
+    <div class="content">
+      <h1>마취와 신경 억제 작용</h1>
 
-  <h2>3. 💊 수의학적 적용</h2>
-  <p>
-  수의학에서는 수술, 치과 처치, 영상 검사 등에서 마취가 사용된다.
-  동물은 사람처럼 처치 중 가만히 협조하기 어렵기 때문에,
-  안전한 진료를 위해 마취가 중요한 역할을 한다.
-  </p>
+      <div id="concept" class="info-section">
+        <h2>1. 개념</h2>
+        <p>마취는 수술이나 처치 과정에서 통증을 줄이고 의식과 움직임을 조절하기 위해 사용하는 방법이다.</p>
+      </div>
 
-  <h2>4. 🧠 나의 분석</h2>
-  <p>
-  마취는 단순히 동물을 잠들게 하는 것이 아니라,
-  통증 전달과 신경 반응을 조절하는 과학적 과정이다.
-  따라서 수의사는 동물의 체중, 나이, 건강 상태를 고려하여
-  적절한 마취 방법을 선택해야 한다.
-  </p>
+      <div id="mechanism" class="info-section">
+        <h2>2. Mechanism</h2>
+        <p>마취제는 신경세포 사이의 신호 전달을 억제하여 통증 자극이 뇌로 전달되는 것을 줄인다.</p>
+      </div>
+
+      <div id="application" class="info-section">
+        <h2>3. 수의학적 적용</h2>
+        <p>수의학에서는 수술, 치과 처치, 영상 검사 등에서 마취가 사용된다. 동물이 안전하게 진료받기 위해 중요하다.</p>
+      </div>
+
+      <div id="analysis" class="info-section">
+        <h2>4. 나의 분석</h2>
+        <p>마취는 단순히 동물을 잠들게 하는 것이 아니라 통증 전달과 신경 반응을 조절하는 과학적 과정이라고 볼 수 있다.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      document.querySelectorAll('.info-section').forEach(section => {
+        section.style.display = 'none';
+      });
+      document.getElementById(sectionId).style.display = 'block';
+    }
+    showSection('concept');
+  </script>
 
 </body>
 </html>
