@@ -119,3 +119,25 @@ html {
 .sub-page .side-menu button:hover {
   color: #0077cc;
 }
+/* Products 카드 hover 효과 - 첫 페이지 카드에만 적용 */
+
+.products .card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.products a .card h3,
+.products a .card p {
+  color: black !important;
+  transition: color 0.2s ease;
+}
+
+.products a:hover .card {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.products a:hover .card h3,
+.products a:hover .card p {
+  color: #005f99 !important;
+}
